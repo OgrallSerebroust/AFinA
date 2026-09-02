@@ -1,0 +1,2 @@
+# AFinA
+Trading analytics platform
