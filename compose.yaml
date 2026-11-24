@@ -1,0 +1,12 @@
+name: afina
+services:
+  backend:
+    build:
+      context: ./services/backend
+      dockerfile: Dockerfile
+    container_name: afina_backend
+    env_file:
+      - ./services/backend/.env
+    expose:
+      - "8000"
+    init: true

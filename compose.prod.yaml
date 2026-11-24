@@ -1,0 +1,9 @@
+services:
+  backend:
+    command: ["dev"]
+    env_file:
+      - ./services/backend/.env
+    image: afina-backend:${APP_VERSION:-latest}
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
